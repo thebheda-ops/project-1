@@ -3,12 +3,399 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Online Shopping in Nepal: Best Deals, Prices & Discounts - Daraz.com.np
-    </title>
+    <title>Atelier Market | Curated Home and Lifestyle</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <img src="assets/logo.png" alt="Atelier Market logo" />
+          <span>Atelier Market</span>
+        </div>
+        <nav class="site-nav">
+          <a href="#new">New</a>
+          <a href="#collections">Collections</a>
+          <a href="#bestsellers">Best Sellers</a>
+          <a href="#studio">Studio</a>
+        </nav>
+        <div class="header-actions">
+          <label class="search">
+            <span class="sr-only">Search</span>
+            <input type="search" placeholder="Search objects, stories..." />
+          </label>
+          <button class="btn ghost" type="button">
+            Sign in
+          </button>
+          <button class="btn primary cart-button" type="button">
+            Cart
+            <span class="cart-count" aria-live="polite">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="new">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">New Season · The Digital Curator</p>
+            <h1>Curate the calm of a gallery in your home.</h1>
+            <p class="hero-body">
+              Edition 04 gathers hand-finished ceramics, modular lighting, and
+              archive-inspired textiles. Every object is selected to feel
+              authored, not mass-produced.
+            </p>
+            <div class="hero-actions">
+              <button class="btn primary" type="button">
+                Shop the edit
+              </button>
+              <button class="btn secondary" type="button">
+                View lookbook
+              </button>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <strong>Free shipping</strong>
+                <span>on orders over $150</span>
+              </div>
+              <div>
+                <strong>Studio certified</strong>
+                <span>hand-finished by makers</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-image">
+              <img src="assets/product-1.webp" alt="Curated object" />
+            </div>
+            <div class="hero-card">
+              <p class="hero-card-title">Featured object</p>
+              <h3>Solstice Ceramic Set</h3>
+              <p class="hero-card-body">
+                Matte glazes, soft edges, and a quiet presence for modern
+                tables.
+              </p>
+              <div class="hero-card-meta">
+                <span>$128</span>
+                <button class="btn tertiary add-to-cart" type="button" data-sku="solstice-ceramic">
+                  Add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip" id="collections">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Curated paths</p>
+              <h2>Explore by mood</h2>
+            </div>
+            <p class="section-body">
+              Each collection is built like an exhibition. Select a mood to
+              focus the edit.
+            </p>
+          </div>
+          <div class="chip-row" role="tablist" aria-label="Shop categories">
+            <button class="chip active" data-category="all" type="button">All</button>
+            <button class="chip" data-category="lighting" type="button">Lighting</button>
+            <button class="chip" data-category="ceramics" type="button">Ceramics</button>
+            <button class="chip" data-category="textiles" type="button">Textiles</button>
+            <button class="chip" data-category="furniture" type="button">Furniture</button>
+            <button class="chip" data-category="studio" type="button">Studio</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="bestsellers">
+        <div class="container">
+          <div class="section-header with-action">
+            <div>
+              <p class="eyebrow">Best sellers</p>
+              <h2>Objects people return for</h2>
+            </div>
+            <button class="btn secondary" type="button">
+              View all products
+            </button>
+          </div>
+          <div class="product-grid">
+            <article class="product-card" data-category="lighting">
+              <div class="product-image">
+                <img src="assets/product-1.webp" alt="Lumen arc lamp" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">
+                  <h3>Lumen Arc Lamp</h3>
+                  <span class="tag">New</span>
+                </div>
+                <p>Adjustable halo glow with brushed steel base.</p>
+                <div class="product-meta">
+                  <span>$248</span>
+                  <button class="btn tertiary add-to-cart" type="button" data-sku="lumen-arc">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="ceramics">
+              <div class="product-image">
+                <img src="assets/product-1.webp" alt="Kora ceramic set" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">
+                  <h3>Kora Ceramic Set</h3>
+                  <span class="tag">Studio</span>
+                </div>
+                <p>Six hand-finished bowls in stone and clay.</p>
+                <div class="product-meta">
+                  <span>$164</span>
+                  <button class="btn tertiary add-to-cart" type="button" data-sku="kora-set">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="textiles">
+              <div class="product-image">
+                <img src="assets/product-1.webp" alt="Veil linen throw" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">
+                  <h3>Veil Linen Throw</h3>
+                  <span class="tag">Limited</span>
+                </div>
+                <p>Airy weave with a soft, sculptural drape.</p>
+                <div class="product-meta">
+                  <span>$98</span>
+                  <button class="btn tertiary add-to-cart" type="button" data-sku="veil-throw">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="furniture">
+              <div class="product-image">
+                <img src="assets/product-1.webp" alt="Mono side table" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">
+                  <h3>Mono Side Table</h3>
+                  <span class="tag">Top rated</span>
+                </div>
+                <p>Architectural form in solid ash and matte stain.</p>
+                <div class="product-meta">
+                  <span>$312</span>
+                  <button class="btn tertiary add-to-cart" type="button" data-sku="mono-table">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="lighting">
+              <div class="product-image">
+                <img src="assets/product-1.webp" alt="Orbit pendant light" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">
+                  <h3>Orbit Pendant</h3>
+                  <span class="tag">Curated</span>
+                </div>
+                <p>Soft opal glass with a dimmable warm core.</p>
+                <div class="product-meta">
+                  <span>$214</span>
+                  <button class="btn tertiary add-to-cart" type="button" data-sku="orbit-pendant">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="studio">
+              <div class="product-image">
+                <img src="assets/product-1.webp" alt="Studio tray set" />
+              </div>
+              <div class="product-body">
+                <div class="product-title">
+                  <h3>Studio Tray Set</h3>
+                  <span class="tag">Handmade</span>
+                </div>
+                <p>Walnut and marble trays for quiet rituals.</p>
+                <div class="product-meta">
+                  <span>$142</span>
+                  <button class="btn tertiary add-to-cart" type="button" data-sku="studio-trays">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="editorial">
+        <div class="container pull-quote">
+          <p>“Objects should feel collected, not bought. Let them tell the story.”</p>
+          <span>— The Atelier Studio</span>
+        </div>
+      </section>
+
+      <section class="curation" id="studio">
+        <div class="container curation-grid">
+          <div class="curation-card">
+            <p class="eyebrow">Studio series</p>
+            <h2>Meet the makers behind the pieces.</h2>
+            <p>
+              Our atelier partners are a collective of ceramicists, textile
+              artists, and metalworkers crafting in small batches. Each drop is
+              signed, dated, and archived.
+            </p>
+            <button class="btn primary" type="button">
+              Visit the studio
+            </button>
+          </div>
+          <div class="curation-list">
+            <div class="curation-item">
+              <div>
+                <h3>Archive Editions</h3>
+                <p>Seasonal pieces released once, then retired.</p>
+              </div>
+              <span>12 drops</span>
+            </div>
+            <div class="curation-item">
+              <div>
+                <h3>Material Studies</h3>
+                <p>Explore new glazes, weaves, and forms.</p>
+              </div>
+              <span>28 stories</span>
+            </div>
+            <div class="curation-item">
+              <div>
+                <h3>Collectors Circle</h3>
+                <p>Member access to early releases and studio notes.</p>
+              </div>
+              <span>Join waitlist</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container newsletter-inner">
+          <div>
+            <p class="eyebrow">The Collector Letter</p>
+            <h2>Receive the next edition before it opens.</h2>
+            <p>
+              We send one letter a month with studio interviews, early access,
+              and curated home rituals.
+            </p>
+          </div>
+          <form class="newsletter-form">
+            <label>
+              <span class="sr-only">Email address</span>
+              <input type="email" placeholder="Email address" required />
+            </label>
+            <button class="btn primary" type="submit">
+              Join the letter
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand footer-brand">
+            <img src="assets/logo.png" alt="Atelier Market logo" />
+            <span>Atelier Market</span>
+          </div>
+          <p>
+            A digital atelier for curated home and lifestyle objects. Designed
+            to feel like a modern gallery.
+          </p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <a href="#collections">Collections</a>
+          <a href="#bestsellers">Best Sellers</a>
+          <a href="#studio">Studio</a>
+        </div>
+        <div>
+          <h4>Support</h4>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h4>Visit</h4>
+          <p>Atelier Market</p>
+          <p>New York · Copenhagen · Kyoto</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const cartCount = document.querySelector(".cart-count");
+      const toast = document.querySelector(".toast");
+      const addButtons = document.querySelectorAll(".add-to-cart");
+      const chips = document.querySelectorAll(".chip");
+      const products = document.querySelectorAll(".product-card");
+      let count = 0;
+
+      const showToast = (message) => {
+        toast.textContent = message;
+        toast.classList.add("show");
+        window.clearTimeout(toast.hideTimer);
+        toast.hideTimer = window.setTimeout(() => {
+          toast.classList.remove("show");
+        }, 1800);
+      };
+
+      addButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          count += 1;
+          cartCount.textContent = count;
+          showToast("Added to cart");
+        });
+      });
+
+      chips.forEach((chip) => {
+        chip.addEventListener("click", () => {
+          chips.forEach((item) => item.classList.remove("active"));
+          chip.classList.add("active");
+          const category = chip.dataset.category;
+          products.forEach((product) => {
+            const match =
+              category === "all" || product.dataset.category === category;
+            product.style.display = match ? "flex" : "none";
+          });
+        });
+      });
+
+      document
+        .querySelector(".newsletter-form")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          showToast("Welcome to the Collector Letter");
+          event.target.reset();
+        });
+    </script>
   </body>
 </html>
